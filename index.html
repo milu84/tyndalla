@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tyndalla — Cisza pęka</title>
+  <meta name="description" content="Tyndalla — polski projekt rockowy. Debiutancki album „Cisza pęka” — premiera 25 grudnia 2026.">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="canonical" href="https://tyndalla.pl/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="Tyndalla">
+  <meta property="og:title" content="Tyndalla — Cisza pęka">
+  <meta property="og:description" content="Tyndalla — polski projekt rockowy. Debiutancki album „Cisza pęka” — premiera 25 grudnia 2026.">
+  <meta property="og:url" content="https://tyndalla.pl/">
+  <meta property="og:image" content="https://tyndalla.pl/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Tyndalla — snop światła w ciemności">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tyndalla — Cisza pęka">
+  <meta name="twitter:description" content="Tyndalla — polski projekt rockowy. Debiutancki album „Cisza pęka” — premiera 25 grudnia 2026.">
+  <meta name="twitter:image" content="https://tyndalla.pl/assets/og-image.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Jost:wght@300;400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#o-projekcie">Przejdź do treści</a>
+
+  <header class="hero" id="top">
+    <canvas class="hero__dust" aria-hidden="true"></canvas>
+    <div class="hero__shaft" aria-hidden="true"></div>
+    <div class="hero__content">
+      <h1 class="logo" aria-label="Tyndalla">
+        <span class="logo__part" aria-hidden="true">TYNDAL</span><span class="logo__beam" aria-hidden="true"></span><span class="logo__part" aria-hidden="true">LA</span>
+      </h1>
+      <p class="tagline">kiedy cisza pęka, widać światło</p>
+    </div>
+    <a class="scroll-cue" href="#o-projekcie" aria-label="Przewiń do sekcji O projekcie">
+      <span class="scroll-cue__line" aria-hidden="true"></span>
+    </a>
+  </header>
+
+  <main>
+    <section class="section about" id="o-projekcie" aria-labelledby="about-title">
+      <div class="container narrow">
+        <h2 class="section__title" id="about-title">O projekcie</h2>
+        <p class="about__text">Tyndalla bierze nazwę od efektu Tyndalla — zjawiska, w którym snop światła w ciemności staje się widoczny dopiero wtedy, gdy przechodzi przez to, co wypełnia przestrzeń. Za Tyndallą stoi Michał — człowiek z branży IT, który dzięki technologii AI po raz pierwszy może wyrazić siebie przez muzykę: polskie teksty, które długo czekały w ciszy.</p>
+      </div>
+    </section>
+
+    <section class="section album" id="cisza-peka" aria-labelledby="album-title">
+      <div class="container">
+        <h2 class="section__title" id="album-title">Cisza pęka</h2>
+        <p class="section__subtitle">debiutancki album · premiera <span data-album-date>25.12.2026</span></p>
+
+        <figure class="album__cover">
+          <img src="assets/cover.jpg" alt="Okładka albumu Cisza pęka" width="420" height="420" loading="lazy" decoding="async">
+        </figure>
+
+        <div class="album__links" data-album-links></div>
+
+        <ol class="tracklist" data-tracklist aria-label="Lista utworów"></ol>
+      </div>
+    </section>
+
+    <section class="section listen" id="sluchaj" aria-labelledby="listen-title">
+      <div class="container">
+        <h2 class="section__title" id="listen-title">Słuchaj</h2>
+        <div class="listen__main" data-listen-main></div>
+        <div class="listen__social" data-listen-social></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="kontakt" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section__title" id="contact-title">Kontakt</h2>
+        <p class="contact__mail" data-mail data-u="tyndalla" data-d="gmail" data-t="com">
+          <noscript>tyndalla [at] gmail.com</noscript>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Tyndalla</p>
+      <nav class="footer__links" data-footer-links aria-label="Profile Tyndalli"></nav>
+    </div>
+  </footer>
+
+  <script src="songs.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

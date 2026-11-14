@@ -9,7 +9,6 @@ styles.css     – wygląd
 script.js      – logika (statusy premier, ikony, animacja kurzu, e-mail)
 songs.js       – DANE: album, utwory, linki  ← jedyny plik do edycji
 assets/        – cover.jpg, og-image.jpg, favicon.svg
-CNAME          – własna domena dla GitHub Pages
 ```
 
 ## 1. Edycja danych — `songs.js`
@@ -69,7 +68,8 @@ Każdy kolejny commit na `main` (np. edycja `songs.js`) automatycznie aktualizuj
 
 ## 4. Własna domena
 
-1. Plik `CNAME` zawiera `tyndalla.pl` — zmień na swoją domenę, jeśli inna (jedna linia, bez `https://`).
+1. Utwórz w katalogu głównym plik `CNAME` z jedną linią: `tyndalla.pl` (bez `https://`).
+   Obecnie strona działa pod tymczasowym adresem `https://milu84.github.io/tyndalla/` — pliku `CNAME` celowo nie ma.
 2. U rejestratora domeny ustaw rekordy DNS:
 
    Domena główna (`tyndalla.pl`) — rekordy **A**:
@@ -87,7 +87,7 @@ Każdy kolejny commit na `main` (np. edycja `songs.js`) automatycznie aktualizuj
 4. Gdy weryfikacja przejdzie, zaznacz **Enforce HTTPS**.
 5. Zalecane: zweryfikuj domenę w ustawieniach konta (*Settings → Pages → Add a domain*), aby nikt inny nie mógł jej podpiąć.
 
-Adresy w `index.html` (`canonical`, `og:url`, `og:image`) wskazują na `https://tyndalla.pl/` — przy innej domenie podmień je również tam.
+Po podpięciu domeny podmień w `index.html` adresy `https://milu84.github.io/tyndalla/` (w `canonical`, `og:url`, `og:image`, `twitter:image`) na `https://tyndalla.pl/`.
 
 ## Prywatność
 

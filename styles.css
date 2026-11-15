@@ -424,20 +424,12 @@ a { color: inherit; }
   letter-spacing: .12em;
 }
 
-/* ---------- Słowo od autora (sekcja Słuchaj) ---------- */
+/* ---------- Od autora ---------- */
 
 .note {
-  margin: 96px auto 0;
+  margin: 56px auto 0;
   max-width: 640px;
   text-align: left;
-}
-.note__beam {
-  display: block;
-  width: 1px;
-  height: 64px;
-  margin: 0 auto 48px;
-  background: linear-gradient(to bottom, rgba(244, 241, 234, 0), rgba(244, 241, 234, .7), rgba(244, 241, 234, 0));
-  box-shadow: 0 0 10px rgba(232, 195, 138, .35);
 }
 .note__text {
   margin: 0;
@@ -447,6 +439,19 @@ a { color: inherit; }
 }
 .note__text p { margin: 0 0 1.4em; }
 .note__text p:last-child { margin-bottom: 0; }
+.note__book {
+  color: var(--fg);
+  text-decoration: underline;
+  text-decoration-color: rgba(232, 195, 138, .5);
+  text-underline-offset: 3px;
+  transition: text-decoration-color .3s var(--ease), text-shadow .3s var(--ease);
+}
+.note__book:hover,
+.note__book:focus-visible {
+  text-decoration-color: var(--glow);
+  text-shadow: 0 0 12px rgba(232, 195, 138, .4);
+}
+.note__book cite { font-style: italic; }
 .note__sign {
   margin-top: 32px;
   text-align: right;

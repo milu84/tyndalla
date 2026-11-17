@@ -34,5 +34,6 @@ const SONGS = [
   { title: "Wyprzedzić świt", releaseDate: "2026-12-11", spotify: "", youtube: "" },
   { title: "Zawsze obok",     releaseDate: "2026-12-18", spotify: "", youtube: "" },
   { title: "Klepsydra",       releaseDate: "2026-12-25", spotify: "", youtube: "" },
-  { title: "42195",           releaseDate: "2026-12-25", spotify: "", youtube: "" }
+  { title: "42195",           releaseDate: "2026-12-25", spotify: "", youtube: "" },
+  { title: "Cisza pęka",      releaseDate: "2026-12-25", spotify: "", youtube: "" }
 ];

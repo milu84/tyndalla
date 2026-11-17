@@ -16,7 +16,7 @@ assets/        – cover.jpg, og-image.jpg, favicon.svg
 
 Otwórz `songs.js` w dowolnym edytorze (można też bezpośrednio na github.com → ikona ołówka).
 
-**Utwory** (`SONGS`) — kolejność w tablicy = kolejność na stronie (numery 01–07 nadawane automatycznie):
+**Utwory** (`SONGS`) — kolejność w tablicy = kolejność na stronie (numery 01, 02, … nadawane automatycznie):
 
 ```js
 { title: "Spirala", releaseDate: "2026-11-27", spotify: "https://open.spotify.com/track/...", youtube: "https://youtu.be/..." },
